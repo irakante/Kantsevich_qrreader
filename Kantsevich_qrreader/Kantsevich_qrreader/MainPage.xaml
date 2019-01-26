@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Kantsevich_qrreader.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Kantsevich_qrreader">
+
+    <StackLayout>
+        <!--  Place new controls here  -->
+        <Button Clicked="Button_Clicked" Text="Scan" />
+        <Label
+            x:Name="CodeResult"
+            HorizontalOptions="Center"
+            Text=""
+            TextColor="Red" />
+    </StackLayout>
+
+</ContentPage>
