@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using ZXing.Net.Mobile.Forms;
@@ -25,10 +22,8 @@ namespace Kantsevich_qrreader
                {
                    await Navigation.PopAsync();
                    CodeResult.Text = result.Text;
-
                    if (Uri.IsWellFormedUriString(result.Text, UriKind.Absolute))
-                   {
-                       //adding clickability to label
+                   {                     
                        CodeResult.GestureRecognizers.Add(
                         new TapGestureRecognizer()
                         {
@@ -38,9 +33,7 @@ namespace Kantsevich_qrreader
                             })
                         }
                     );
-                   }
-
-                     
+                   }                     
                });
             };
         }
